@@ -57,3 +57,4 @@ export class StudentClass implements StudentClassInterface {
 const student = new StudentClass("Amaal", "Otaibi");
 console.log(student.displayName()); 
 console.log(student.workOnHomework());
+
