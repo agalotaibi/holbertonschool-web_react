@@ -68,3 +68,20 @@ export function executeWork(employee: Director | Teacher): void {
 
 executeWork(createEmployee(200));
 executeWork(createEmployee(1000));
+
+
+
+type Subjects = "Math" | "History";
+
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  }
+  if (todayClass === "History") {
+    return "Teaching History";
+  }
+  return "";
+}
+
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
